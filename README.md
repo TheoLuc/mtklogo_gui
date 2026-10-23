@@ -2,7 +2,7 @@
 
 ## **New in 1.2**:
 - The GUI now follows your computer's system language, with English as the default. The new version is 1.2, in the file mtklogo-gui-1.2-x86_64.AppImage (50 MB).
-- Languages ​​included: `Brazilian Portuguese`, `English`, `German`, `Spanish`, and `French`. If you use another language, everything will be in English.
+- Languages ​​included: `Brazilian Portuguese`, `English`, `German`, `Spanish`, `French` and `Russian`. If you use another language, everything will be in English.
 - Ready AppImage (`mtklogo-gui-1.2-x86_64.AppImage`), **set selector** &
 - Comparring (Original × Suggested), with button **Choose logo.bin…**, folder `suggested/` (script v2 + patched mtklogo + new yaml) and correction in prompt detection (ignores `read` from script internal pipes).
 - Details and justifications in `ANALYSIS_AND_SUGGESTIONS.md`.
@@ -19,8 +19,8 @@ chmod +x mtklogo-gui-1.2-x86_64.AppImage
 * Requires glibc ≥ 2.34 (Ubuntu 22.04+, Debian 12+, Fedora 35+, Arch…) because of the `mtklogo` binary. Qt/xcb are built-in.
 
 > [!NOTE]  
-> A folder named `~home/mtklogo-gui` is created with two other subfolders `~home/mtklogo-gui/suggested` and `~home/mtklogo-gui/original`.
-> Set your selection to `original` or `suggested` so that each subfolder contains the png files from your logo.bin file, located in `~home/mtklogo-gui/suggested/logo` and `~home/mtklogo-gui/original/logo`.
+> A folder named `~home/mtklogo-gui` is created with two other subfolders `~home/mtklogo-gui/sugerido` and `~home/mtklogo-gui/original`.
+> Set your selection to `original` or `suggested` so that each subfolder contains the png files from your logo.bin file, located in `~home/mtklogo-gui/sugerido/logo` and `~home/mtklogo-gui/original/logo`.
 >
 > It is in this `/logo` subfolder that you should place your modified png images or modify the png images directly in this subfolder.
 >
@@ -32,7 +32,7 @@ chmod +x mtklogo-gui-1.2-x86_64.AppImage
 
 ## From sources
 
-`./run.sh` opens the original pool; **`./run.sh suggested`** opens the suggested set (`suggested/` folder).
+`./run.sh` opens the original pool; **`./run.sh suggested`** opens the suggested set (`sugerido/` folder).
 
 Minimalist graphical interface (Python + Qt) for `mtklogos.sh`.
 
@@ -44,7 +44,7 @@ The script runs **exactly as is** (`bash ./mtklogos.sh`): the GUI only captures 
 MTKLOGO_GUI_LANG=de ./mtklogo-gui-1.2-x86_64.AppImage
 ```
 
-- All 45 GUI texts are translated in windows and dialogs. The standard Qt buttons (`OK`, `Cancel`, `Yes`, `No`, and `file dialogs`) are also included in `German`, `Spanish`, `French`, and `Brazilian Portuguese`.
+- All 45 GUI texts are translated in windows and dialogs. The standard Qt buttons (`OK`, `Cancel`, `Yes`, `No`, and `file dialogs`) are also included in `German`, `Spanish`, `French`, `Russian` and `Brazilian Portuguese`.
 
 > [!NOTE]  
 > I had chosen only one language for the AppImage v1.1 to reduce its size and facilitate quick testing and now I've decided include only a few (approximately 840 KB) for further improvements and language choices.
