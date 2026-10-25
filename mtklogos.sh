@@ -6,7 +6,7 @@
 #   cyberknight777/mtklogo (binary and source) · arlept/mtklogo (original)
 #   Sakurajima07 / 4pda (original script) · lopestom (Linux fork)
 #
-# What changed versus v1 (see ANALISE_E_SUGESTOES.md):
+# What changed versus v1 (see ANALYSIS_AND_SUGGESTIONS.md):
 #   * no recursion (v1 called ./mtklogos.sh from inside `select`);
 #   * profiles come from mtklogo.yaml (`mtklogo profiles`): a new profile shows up
 #     in the menu by itself, no script edit needed;
