@@ -81,7 +81,7 @@ strip_ansi() { sed -E 's/\x1b\[[0-9;]*[A-Za-z]//g'; }
 
 confirm() {   # confirm "question" -> 0 if yes; default = no (y/s/j/o and the full words)
     local a; printf '%s %s ' "$1" "$Y_HINT"; read -r a || return 1
-    case "${a,,}" in y|yes|s|sim|si|sí|j|ja|o|oui) return 0;; *) return 1;; esac
+    case "${a,,}" in y|yes|s|sim|si|sí|j|ja|o|oui|д|да|Д|Да|ДА) return 0;; *) return 1;; esac
 }
 
 ask() {       # ask "question" -> answer in $REPLY
